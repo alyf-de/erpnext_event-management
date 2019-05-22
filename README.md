@@ -2,6 +2,6 @@
 
 Event-Management
 
-#### License
 
-MIT
+
+
