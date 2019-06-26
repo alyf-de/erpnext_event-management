@@ -11,7 +11,7 @@ class Block(Document):
 
 @frappe.whitelist()
 def create_rows(amount,block):
-	for row in range(amount):
+	for row in range(1,int(amount) + 1):
 		doc = frappe.get_doc({
 				"doctype": "Row",
 				"title": "{}".format(row),
