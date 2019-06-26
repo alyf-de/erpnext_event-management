@@ -9,7 +9,7 @@ from frappe.model.document import Document
 class Block(Document):
 	pass
 
-@whitelist
+@frappe.whitelist()
 def create_rows(amount,block):
 	for row in range(amount):
 		doc = frappe.get_doc({
