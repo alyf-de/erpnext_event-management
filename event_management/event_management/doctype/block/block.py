@@ -12,9 +12,12 @@ class Block(Document):
 @frappe.whitelist()
 def create_rows(amount,block):
 	for row in range(1,int(amount) + 1):
-		doc = frappe.get_doc({
+		try:
+			doc = frappe.get_doc({
 				"doctype": "Row",
 				"title": "{}".format(row),
 				"block": block
-		})
-		doc.insert()
+			})
+			doc.insert()
+		except frappe.DuplicateEntryError:
+			continue
