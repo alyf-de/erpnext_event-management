@@ -8,3 +8,13 @@ from frappe.model.document import Document
 
 class Block(Document):
 	pass
+
+@whitelist
+def create_rows(amount,block):
+	for row in range(amount):
+		doc = frappe.get_doc({
+				"doctype": "Row",
+				"title": "{}".format(row),
+				"block": block
+		})
+		doc.insert()
