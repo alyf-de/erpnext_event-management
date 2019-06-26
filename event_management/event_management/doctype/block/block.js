@@ -12,7 +12,7 @@ frappe.ui.form.on('Block', {
 					parent_field: "block",
 					parent_name: frm.doc.name,
 				}
-			});
+			}).then(() => frm.refresh());
 		});
 	}
 });

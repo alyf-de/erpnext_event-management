@@ -12,7 +12,7 @@ frappe.ui.form.on('Row', {
 					parent_field: "row",
 					parent_name: frm.doc.name,
 				}
-			});
+			}).then(() => frm.refresh());
 		});
 	}
 });
