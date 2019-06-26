@@ -7,7 +7,7 @@ frappe.ui.form.on('Row', {
 			frappe.call({
 				method: "event_management.event_management.utils.create_docs",
 				args: {
-					n: frm.doc.number_of_rows,
+					n: frm.doc.number_of_seats,
 					doctype: "Seat",
 					parent_field: "row",
 					parent_name: frm.doc.name,
