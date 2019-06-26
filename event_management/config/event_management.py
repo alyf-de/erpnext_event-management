@@ -51,5 +51,34 @@ def get_data():
                     "description": _("Reservation")
                 }
             ]
+        },
+        {
+            "label": _("Sport"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Match Day",
+                    "label": _("Match Day"),
+                    "description": _("Match Day")    
+                },
+                {
+                    "type": "doctype",
+                    "name": "Season",
+                    "label": _("Season"),
+                    "description": _("Season")    
+                },               
+                {
+                    "type": "doctype",
+                    "name": "Season Pass",
+                    "label": _("Season Pass"),
+                    "description": _("Season Pass")    
+                },   
+                                {
+                    "type": "doctype",
+                    "name": "Soccer Team",
+                    "label": _("Soccer Team"),
+                    "description": _("Soccer Team")    
+                } 
+            ]
         }
     ] 
