@@ -73,11 +73,17 @@ def get_data():
                     "label": _("Season Pass"),
                     "description": _("Season Pass")    
                 },   
-                                {
+                {
                     "type": "doctype",
                     "name": "Soccer Team",
                     "label": _("Soccer Team"),
                     "description": _("Soccer Team")    
+                },
+                {
+                    "type": "doctype",
+                    "name": "League",
+                    "label": _("League"),
+                    "description": _("League")    
                 } 
             ]
         }
