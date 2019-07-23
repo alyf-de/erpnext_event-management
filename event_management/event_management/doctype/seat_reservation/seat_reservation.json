@@ -23,7 +23,7 @@
    "columns": 0, 
    "fetch_from": "", 
    "fetch_if_empty": 0, 
-   "fieldname": "seatnr", 
+   "fieldname": "seat", 
    "fieldtype": "Link", 
    "hidden": 0, 
    "ignore_user_permissions": 0, 
