@@ -5,7 +5,7 @@ def get_data():
 	return {
 		'fieldname': 'soccer_team',
 		'non_standard_fieldnames': {
-			'Match Day': ('home_team', 'guest_team')
+			'Match Day': ['home_team', 'guest_team']
 		},
 		'transactions': [
 			{
