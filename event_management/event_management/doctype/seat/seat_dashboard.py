@@ -8,6 +8,10 @@ def get_data():
 			{
 				'label': _('Reservations'),
 				'items': ['Reservation']
-			}
+			},
+                        {
+				'label': _('Season Pass'),
+				'items': ['Season Pass']
+                        }
 		]
 	}
