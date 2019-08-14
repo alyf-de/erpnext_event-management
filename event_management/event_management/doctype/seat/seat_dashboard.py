@@ -7,11 +7,7 @@ def get_data():
 		'transactions': [
 			{
 				'label': _('Reservations'),
-				'items': ['Reservation']
-			},
-                        {
-				'label': _('Season Pass'),
-				'items': ['Season Pass']
+				'items': ['Reservation', 'Season Pass']
                         }
 		]
 	}
